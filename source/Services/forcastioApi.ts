@@ -1,4 +1,4 @@
-import * as Request from 'request';
+import {Request} from './request';
 import * as Promise from 'bluebird';
 import * as Moment from 'moment';
 import * as Path from 'path';
@@ -100,7 +100,7 @@ class ForcastIOAPI {
     return new Promise((resolve, reject) => {
       this._validateThis();
       Request.get(this._compiledURIObject(),
-        (error: any, response: Request.RequestResponse, body: any) => {
+        (error: any, response: any, body: any) => {
           if (error) {
             return reject(`Forecasting request failed. Error : ${error}`);
           }
