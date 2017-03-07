@@ -1,0 +1,10 @@
+.vscode
+dist
+node_modules
+source
+test
+.gitignore
+.git
+.editorconfig
+tsconfig.json
+tslint.json
