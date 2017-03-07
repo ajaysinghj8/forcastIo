@@ -1,19 +1,20 @@
 import * as Express from 'express';
 import * as Promise from 'bluebird';
-import * as BodyParser from 'body-parser';
-
+// import * as BodyParser from 'body-parser';
+import * as Path from 'path';
 import { WeatherRouter } from './Routes';
 
 const app = Express();
 
 app.set('view engine', 'ejs');
 
-app.use(BodyParser.urlencoded({
-  extended: true
-}));
+app.use('/static', Express.static(Path.join(process.cwd(), 'static_assests')));
 
-app.use(BodyParser.json());
+// app.use(BodyParser.urlencoded({
+//   extended: true
+// }));
 
+// app.use(BodyParser.json());
 
 // Routeing
 
