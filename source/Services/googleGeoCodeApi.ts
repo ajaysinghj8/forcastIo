@@ -1,4 +1,4 @@
-import * as Request from 'request';
+import  {Request} from './request';
 import * as Promise from 'bluebird';
 const QueryString = require('query-string');
 
@@ -46,7 +46,7 @@ class GeoCodeAPI{
     return new Promise((resolve, reject) => {
       this._validateThis();
       Request.get(this._compiledURIObject(),
-      (error: any, response: Request.RequestResponse, body: any) => {
+      (error: any, response: any, body: any) => {
         if (error) {
               return reject(`GeoCode Api request failed. Error : ${error}`);
             }
