@@ -99,7 +99,6 @@ class ForcastIOAPI {
   fetch(): Promise<any> {
     return new Promise((resolve, reject) => {
       this._validateThis();
-      console.log(this._compiledURIObject().uri);
       Request.get(this._compiledURIObject(),
         (error: any, response: Request.RequestResponse, body: any) => {
           if (error) {
