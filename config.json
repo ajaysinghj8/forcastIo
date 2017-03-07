@@ -1,0 +1,6 @@
+{
+  "HOST":"localhost",
+  "PORT":3000,
+  "GOOGLE_API_KEY":"",
+  "FORCAST_API_KEY":""
+}
