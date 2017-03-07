@@ -71,7 +71,7 @@ tslint    | for linting of typescript.
 typescript | typescript to js compiler.
 reflect-metadata | metadata for decorators, helps typescript to compile in js with decorators.
 
-Some type definitions also defined under devDependencies.
+Some type definitions are also defined under devDependencies.
 
 ### File Structures
 <pre>
